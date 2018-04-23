@@ -37,7 +37,7 @@ class Postman21Parser implements Parser
 
     private function prepareOutputPath($path)
     {
-        if($path[count($path) - 1] !== '/') {
+        if($path[strlen($path) - 1] !== '/') {
             return $path . '/';
         }
 
